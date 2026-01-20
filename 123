@@ -1,0 +1,8 @@
+t = int(input())
+for i in range(t):
+    a, b, n = map(int, input().split()) 
+    if a > b: 
+        count = ((n-b)//a)+1
+    else:
+        count = ((n-a)//b)+1
+    print(count)
